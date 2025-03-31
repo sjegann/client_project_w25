@@ -38,11 +38,7 @@ nav ul {
     align-items: center;
     gap: 10px;
     padding: 1rem;
-}
-
-nav ul li {
-    width: 100%;
-    text-align: center;
+    list-style: none;
 }
 
 nav a {
@@ -56,9 +52,15 @@ nav a {
     transition: 0.3s;
 }
 
-nav a:hover, .active {
+nav a:hover {
     background-color: #ffffff;
     color: #00274C;
+    border: 2px solid #FFCB05;
+}
+
+nav a.active {
+    background-color: #00274C;
+    color: #FFCB05;
     border: 2px solid #FFCB05;
 }
 
@@ -85,7 +87,7 @@ nav a:hover, .active {
 /* Main Content */
 main {
     padding: 1rem;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -118,7 +120,6 @@ main a:visited {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     width: 100%;
-    max-width: 900px;
     margin: 0 auto;
     padding: 1rem;
 }
@@ -144,7 +145,6 @@ main a:visited {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     width: 100%;
-    max-width: 900px;
     margin: 0 auto;
     padding: 1rem;
 }
@@ -186,7 +186,6 @@ main a:visited {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     width: 100%;
-    max-width: 900px;
     margin: 0 auto;
     padding: 1rem;
 }
@@ -198,11 +197,11 @@ main a:visited {
     text-align: left;
 }
 
-.tutoring-gi img {
+.tutoring-img {
     display: block;
     margin: 1rem auto;
     width: 100%;
-    max-width: 300px;
+    max-width: 1000px;
     border-radius: 5px;
 }
 
@@ -218,11 +217,23 @@ main a:visited {
     display: block;
     margin: 1rem auto;
     width: 100%;
+    max-width: 1000px;
     border-radius: 5px;
 }
 
+.missing-intro {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
 /* Column layout for larger screens */
-@media (min-width: 768px) {
+@media (min-width: 900px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
     .needs-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 1.5rem;
@@ -234,7 +245,7 @@ main a:visited {
     .tutoring-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
-    }   
+    }  
 }
 
 /* Footer */
@@ -278,4 +289,72 @@ button:focus {
 button:hover {
     background-color: #ffffff;
     border: 2px solid #FFCB05;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #00274C;
+    color: #FFCB05;
+}
+
+.dark-mode body {
+    background-color: #00274C;
+    color: #FFCB05;
+}
+
+.dark-mode .portal-intro,
+.dark-mode .needs-gi,
+.dark-mode .advising-gi,
+.dark-mode .tutoring-gi,
+.dark-mode .missing-intro {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.dark-mode nav a {
+    background-color: #00274C;
+    color: #FFCB05;
+    border: 2px solid #FFCB05;
+}
+
+.dark-mode nav a:hover {
+    background-color: #000000;
+    color: #FFCB05;
+    border: 2px solid #FFCB05;
+}
+
+.dark-mode nav a.active {
+    background-color: #FFCB05;
+    color: #00274C;             
+    border: 2px solid #FFCB05;
+}
+
+.dark-mode .skip-main {
+    background-color: #00274C;
+    color: #FFCB05;
+}
+
+.dark-mode main a {
+    color: #FFCB05;
+    text-decoration: underline;
+}
+
+.dark-mode main a:visited {
+    color: #d4af37;
+}
+  
+.dark-mode main a:focus {
+    outline: 3px solid #FFCB05;
+    background-color: #00274C;
+    color: #ffffff;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+.dark-mode header{
+    border-bottom: 2px solid #FFCB05;
+}
+
+.dark-mode footer {
+    border-top: 2px solid #FFCB05;
 }

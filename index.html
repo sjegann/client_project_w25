@@ -12,10 +12,10 @@
 
     <header id="header">
         <a href = "#main-content" class="skip-main">Skip to Main Content</a>
-        <img src="images/favicon.ico" width="100" alt="UMSI Logo">
+        <img src="images/favicon.ico" id="dark-toggle" alt="Toggle dark mode" width="40" height="40" style="cursor: pointer;">
         <nav>
             <ul>
-                <li class="active"><a href = "index.html">Home</a></li>
+                <li ><a href = "index.html" class="active">Home</a></li>
                 <li><a href = "bsi_advising.html">BSI Advising</a></li>
                 <li><a href = "tutoring.html">Tutoring</a></li>
                 <li><a href = "basic_needs.html">Basic Needs</a></li>
@@ -29,9 +29,9 @@
             <p>This website is designed to provide University of Michigan students with quick access to key resources that support their academic and personal success. Whether you are looking for academic advising, tutoring, or help meeting basic needs such as food, housing, or financial assistance, this portal connects you to the services and information you need to thrive as a student.</p>
             <p>The portal features:</p>
             <ul>
-                <li>Links to <strong>BSI Academic Advising</strong> for one-on-one appointments and drop-in advising sessions.</li>
-                <li>Information about the <strong>UMSI Tutoring Program</strong>, offering free peer tutoring and study support for a variety of subjects.</li>
-                <li>Details on <strong>Basic Needs Resources</strong>, including food security, housing assistance, and financial aid programs.</li>
+                <li>Links to <strong><a href = "bsi_advising.html">BSI Academic Advising</a></strong> for one-on-one appointments and drop-in advising sessions.</li>
+                <li>Information about the <strong><a href = "tutoring.html">UMSI Tutoring Program</a></strong>, offering free peer tutoring and study support for a variety of subjects.</li>
+                <li>Details on <strong><a href = "basic_needs.html">Basic Needs Resources</a></strong>, including food security, housing assistance, and financial aid programs.</li>
             </ul>
             <p>Use the navigation menu at the top of this page to explore these resources in more detail. Each section is tailored to ensure you have the support you need to succeed academically, stay healthy, and balance life as a student at the University of Michigan.</p>
         </div>
@@ -41,8 +41,10 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 University of Michigan. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> University of Michigan. All rights reserved.</p>
         <p><a href="#header">Back to Top</a></p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

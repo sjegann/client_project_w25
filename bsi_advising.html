@@ -12,11 +12,11 @@
 
     <header id="header">
             <a href = "#main-content" class="skip-main">Skip to Main Content</a>
-            <img src="images/favicon.ico" width="100" alt="UMSI Logo">
+            <img src="images/favicon.ico" id="dark-toggle" alt="Toggle dark mode" width="40" height="40" style="cursor: pointer;">
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
-                <li class="active"><a href = "bsi_advising.html">BSI Advising</a></li>
+                <li><a href = "bsi_advising.html" class="active">BSI Advising</a></li>
                 <li><a href = "tutoring.html">Tutoring</a></li>
                 <li><a href = "basic_needs.html">Basic Needs</a></li>
             </ul>
@@ -60,9 +60,10 @@
         </div>
     </main>
     <footer>
-        <p>&copy; 2025 University of Michigan. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> University of Michigan. All rights reserved.</p>
         <p><a href="#header">Back to Top</a></p>
     </footer>
-    
+
+    <script src="js/script.js"></script>
 </body>
 </html>
